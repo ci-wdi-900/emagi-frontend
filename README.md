@@ -26,4 +26,10 @@ We no longer need a custom `getInput` function, because we understand arrays now
 
 ### Stretch Goals
 
-Coming soon!
+* Right now, words that end sentences have periods on the end of them, and thus will not convert properly. How can we fix that?
+* Add some emojis! You can never have too many. [citation needed]
+* Make an emoji [mad libs](https://en.wikipedia.org/wiki/Mad_Libs) command possible. It could work like this:
+
+![a picture of the mad libs command being used](./madlibs.png)
+
+What we're doing here is grabbing a random food emoji whenever we see the word "food" and a random emotion emoji whenever we see the word "emotion". You'll have to devise categories, and some of the logic is already there for you in the randomizing function. Up to you how to implement it, exactly!
