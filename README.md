@@ -7,6 +7,13 @@ Today, we'll be working on the front end for our node app from the [Emagi Backen
 Let's `node` away!
 
 
+### What's our app... do?
+
+This!
+
+![the app in action](./emagi-in-action.png)
+
+
 ### About `process.argv`
 
 We no longer need a custom `getInput` function, because we understand arrays now! We're going to use `process.argv` instead, the built-in array that node populates with our user arguments. Do some research on it if you wish, but here's the short version: it's an array of strings, and each string is one of the space-separated words the user typed in. So, if they typed in `convert i love pizza`, then 'convert' would be at index 0, 'i' at index 1, and so on. **Except there's a twist!** Node also counts 'node' and 'main.js' as words, so the user's real arguments begin at index **2**. Check out the Array `.slice` for grabbing from a certain index on! (Not to be confused with the string slice method of the same name, though.)
